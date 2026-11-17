@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrickSculpt — brick sculptures you can build</title>
+<meta name="description" content="BrickSculpt for iPhone and iPad turns a design into a sculpture made of standard plastic bricks, with a 3-D preview, layer-by-layer building steps and a complete parts list. Coming soon. Support: don@donstech.com.">
+<meta property="og:title" content="BrickSculpt — brick sculptures you can build">
+<meta property="og:description" content="Spin the 3-D model, pick a size, then build it layer by layer from a complete parts list.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#5b3a29">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root { --accent: #5b3a29; --bg: #e4ecea; --paper: #fbfcfc; --ink: #1c1f1e; --muted: #5d6865; --line: #c9d5d2; }
+  @media (prefers-color-scheme: dark) {
+    :root { --accent: #d39b78; --bg: #171b1a; --paper: #232928; --ink: #eef2f1; --muted: #9aa6a3; --line: #313937; }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+    display: flex; flex-direction: column; align-items: center;
+    text-align: center; padding: 3rem 1.25rem 2rem; min-height: 100%;
+  }
+  .icon { width: 112px; height: 112px; border-radius: 25px; box-shadow: 0 18px 50px rgba(0,0,0,0.16), 0 0 0 1px var(--line); margin-bottom: 2rem; }
+  h1 { font-size: clamp(2.8rem, 13vw, 5.2rem); font-weight: 800; letter-spacing: -0.02em; color: var(--accent); line-height: 1; }
+  .tagline { margin-top: 1rem; font-size: clamp(1.1rem, 4.5vw, 1.45rem); font-weight: 500; color: var(--muted); max-width: 30ch; line-height: 1.4; }
+  .badge { margin-top: 1.8rem; display: inline-block; white-space: nowrap; padding: 0.55rem 1.1rem; border: 1.5px solid var(--accent); border-radius: 999px; color: var(--accent); font-weight: 700; font-size: clamp(0.78rem, 3.4vw, 0.95rem); letter-spacing: 0.04em; text-transform: uppercase; }
+  .phone { margin-top: 2.6rem; width: min(300px, 78vw); border-radius: 38px; overflow: hidden; box-shadow: 0 30px 70px rgba(0,0,0,0.22), 0 0 0 8px #111, 0 0 0 9px var(--line); }
+  .phone img { display: block; width: 100%; height: auto; }
+  .features { margin-top: 2.8rem; list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; max-width: 36rem; }
+  .features li { padding: 0.45rem 0.95rem; border-radius: 999px; background: var(--paper); box-shadow: 0 0 0 1px var(--line); font-size: 0.95rem; font-weight: 600; }
+  .how { margin-top: 2.6rem; max-width: 34rem; display: grid; gap: 0.8rem; text-align: left; }
+  .how div { background: var(--paper); box-shadow: 0 0 0 1px var(--line); border-radius: 16px; padding: 1rem 1.2rem; line-height: 1.5; }
+  .how b { color: var(--accent); }
+  .private { margin-top: 2.4rem; max-width: 32ch; font-size: 1.05rem; line-height: 1.5; }
+  .support { margin-top: 2.4rem; max-width: 34ch; font-size: 1rem; color: var(--muted); line-height: 1.5; }
+  .support h2 { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.4rem; }
+  .support p { margin-bottom: 0.6rem; }
+  .support a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  .support a:hover { text-decoration: underline; }
+  .note { margin-top: 2.4rem; max-width: 42ch; font-size: 0.8rem; color: var(--muted); line-height: 1.5; }
+  footer { margin-top: 2rem; font-size: 0.85rem; color: var(--muted); }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+  <img class="icon" src="icon.png" alt="">
+  <h1>BrickSculpt</h1>
+  <p class="tagline">Brick sculptures you can actually build: spin the 3-D model, pick a size, then build it layer by layer.</p>
+  <span class="badge">Coming soon · iPhone &amp; iPad</span>
+
+  <div class="phone"><img src="screenshot.jpg" alt="BrickSculpt showing a brick-built English Springer Spaniel in 3-D, 384 bricks, 26 cm long" width="552" height="1200"></div>
+
+  <ul class="features" aria-label="Features">
+    <li>3-D preview</li>
+    <li>Choose the size</li>
+    <li>Layer-by-layer steps</li>
+    <li>Complete parts list</li>
+    <li>Standard bricks</li>
+    <li>Checked to hold together</li>
+    <li>Export for design tools</li>
+  </ul>
+
+  <section class="how" aria-label="How it works">
+    <div><b>1. Look it over.</b> Spin and zoom the model, studs and all. The first sculpture is a lying English Springer Spaniel in liver and white.</div>
+    <div><b>2. Pick a size.</b> Slide from a desk-size 22&nbsp;cm to a showpiece over 40&nbsp;cm. The brick count, size and parts update instantly.</div>
+    <div><b>3. Build it.</b> Step through each layer with a labelled plan that shows exactly which brick goes where, on top of the layer below.</div>
+  </section>
+
+  <p class="private"><strong>Private by design.</strong> Everything is worked out on your device. No account, no tracking, no ads.</p>
+
+  <section class="support" id="support">
+    <h2>Support &amp; contact</h2>
+    <p>Questions, a build that didn&rsquo;t go together, or a sculpture you&rsquo;d like to see? Email <a href="mailto:don@donstech.com?subject=BrickSculpt%20support">don@donstech.com</a> &mdash; I read every message.</p>
+    <p><a href="privacy.html">Privacy Policy</a></p>
+  </section>
+
+  <p class="note">BrickSculpt designs use standard, widely available plastic bricks. BrickSculpt is an independent app and is not affiliated with, sponsored or endorsed by any toy or brick manufacturer. Product names mentioned belong to their owners.</p>
+  <footer>A <a href="https://donstech.com">donstech</a> app</footer>
+</body>
+</html>
